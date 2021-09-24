@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*NAVBAR*/
+
+.navegacao {
+    background-color: #CCCCCC; 
+    padding: 20px;  
+}
+
+.navbar {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    right: 0px;
+    top: 110px;
+
+}
+
+.menu li {
+    display: inline; 
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.menu a:hover {
+    color: rgb(207, 191, 98);
+}
+
+/*HOME MAIN*/
+
+.banner-home {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    clear: left;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal p {
+    margin-bottom: 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa {
+    padding: 3em 0;
+    text-align: center;
+    background-image: linear-gradient(to bottom, white, #888888);
+    
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    
+}
+
+.mapa-box {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background-image: linear-gradient(to bottom, #888888, #363636)  ;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.beneficios-list {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    
+}
+
+.beneficios-list li {
+    list-style-type:none;
+    line-height: 1.5em;
+}
+
+.beneficios li:nth-child(1) {
+    font-weight: bold;
+}
+
+.beneficios-list li:before {
+    content: "★ ";
+}
+
+.beneficios-img {
+    width: 60%;
+    box-shadow: 10px 5px 6px 0px rgba(15, 15, 15, 0.582);
+}
+
+.beneficios-img:hover {
+    opacity: 0.5;
+}
+
+.video-barbearia {
+    width: 560px;
+    margin: 2em auto;
+}
+
+
+
+/*PRODUTOS MAIN*/
+
+.produtos {
+    width: 940px;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: rgb(207, 191, 98);
+}
+
+.produtos li:hover h2 {
+    color: rgb(207, 191, 98);
+    font-size: 32px;
+}
+
+.produtos li:active {
+    border-color: green;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 22px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+/*CONTATO MAIN*/
+
+.contato {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    margin: 15px 0;
+    font-size: 1.3em;
+}
+
+fieldset {
+    border: none;
+}
+
+.input-text {
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+.input-check {
+    margin-right: 10px;
+} 
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 100px;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: orangered;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+    border-spacing: 0;
+    border-collapse:collapse;
+}
+
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    background-image: url("../images/bg.jpg");
+}
+
+.copyright {
+    color: white;
+    padding: 20px 0px;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 480px) {
+    .navbar, .principal, .conteudo-beneficios, .mapa-box, .video-barbearia {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .menu {
+        position: static;
+    }
+
+    .beneficios-list, .beneficios-img {
+        width: 100%;
+    }
+}
